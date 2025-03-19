@@ -11,3 +11,9 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.title-decor {
+  font-size: inherit;
+  color: var(--accent-text-color);
+  background-color: var(--accent-color);
+}
