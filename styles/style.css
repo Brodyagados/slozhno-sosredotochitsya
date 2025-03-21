@@ -225,3 +225,118 @@
 }
 
 /* #endregion */
+
+@media (min-width: 768px) {
+  /* #region Шапка */
+
+  .header__logo {
+    top: 20px;
+    right: 48px;
+  }
+
+  .header__title {
+    margin-inline-start: -20px;
+  }
+
+  /* #endregion */
+
+  /* #region Основной контент */
+
+  .main {
+    padding-inline: 20px;
+    margin-block-start: 60px;
+    gap: 80px;
+  }
+
+  /* #region Секция */
+
+  .section.section_type_why,
+  .section.section_type_what,
+  .section.section_type_how {
+    display: grid;
+    grid-template-columns: minmax(236px, 315px) minmax(472px, 100%);
+  }
+
+  .section.section_type_why {
+    grid-template-areas: 'section-title section-list';
+  }
+
+  .section.section_type_what {
+    grid-template-areas:
+      'section-title .'
+      'section-list section-list';
+  }
+
+  .section.section_type_how {
+    grid-template-areas:
+      'section-title section-subtitle'
+      'section-title section-list';
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-areas:
+      'sunset sunset ice-cream'
+      'tape books ice-cream'
+      'tape street street';
+    gap: 20px;
+    margin-block-start: 10px;
+  }
+
+  .gallery__image {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  .gallery__image.gallery__image_content_sunset {
+    grid-area: sunset;
+  }
+
+  .gallery__image.gallery__image_content_ice-cream {
+    grid-area: ice-cream;
+  }
+
+  .gallery__image.gallery__image_content_tape {
+    grid-area: tape;
+  }
+
+  .gallery__image.gallery__image_content_books {
+    grid-area: books;
+  }
+
+  .gallery__image.gallery__image_content_street {
+    grid-area: street;
+  }
+
+  /* #endregion */
+
+  /* #endregion */
+
+  /* #region Подвал */
+
+  .footer {
+    margin-block-start: 60px;
+  }
+
+  /* #endregion */
+
+  /* #region Шапка и Подвал */
+
+  .decorated-zone {
+    --indent: 20px;
+  }
+
+  .header,
+  .footer {
+    min-block-size: 1024px;
+    padding: 20px;
+  }
+
+  .footer__title,
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  /* #endregion */
+}
