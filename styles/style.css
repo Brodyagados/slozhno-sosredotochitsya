@@ -12,6 +12,61 @@
   background-attachment: fixed;
 }
 
+.header {
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  top: 10px;
+  right: 38px;
+  color: var(--accent-color);
+}
+
+.header__logo::after {
+  --size: 9px;
+
+  content: '';
+  position: absolute;
+  top: calc(50% - var(--size) / 2);
+  left: 42px;
+  inline-size: var(--size);
+  block-size: var(--size);
+  border-radius: 50%;
+  background-color: currentColor;
+  box-shadow: 0 0 4px 2px currentColor;
+}
+
+.decorated-zone {
+  --size: 25px;
+  --border: thin solid var(--button-text-color);
+  --indent: 10px;
+
+  position: relative;
+}
+
+.decorated-zone::after,
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  inline-size: var(--size);
+  block-size: var(--size);
+}
+
+.decorated-zone::before {
+  top: var(--indent);
+  right: var(--indent);
+  border-block-start: var(--border);
+  border-inline-end: var(--border);
+}
+
+.decorated-zone::after {
+  bottom: var(--indent);
+  left: var(--indent);
+  border-block-end: var(--border);
+  border-inline-start: var(--border);
+}
+
 .title-decor {
   font-size: inherit;
   color: var(--accent-text-color);
