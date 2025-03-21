@@ -118,12 +118,18 @@
   gap: 20px;
 }
 
+.section__list {
+  grid-area: section-list;
+}
+
 .section__title {
+  grid-area: section-title;
   font-size: inherit;
   color: var(--section-title-color);
 }
 
 .section__subtitle {
+  grid-area: section-subtitle;
   font-weight: 400;
 }
 
