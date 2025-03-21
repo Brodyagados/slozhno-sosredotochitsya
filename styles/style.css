@@ -105,6 +105,10 @@
   pointer-events: none;
 }
 
+.header__title {
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
 .header__description {
   justify-self: end;
   align-self: center;
@@ -197,6 +201,10 @@
   margin-block-start: 40px;
 }
 
+.footer__title {
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
 /* #endregion */
 
 /* #region Шапка и Подвал */
@@ -213,7 +221,6 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.83;
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
   text-transform: lowercase;
 }
 
