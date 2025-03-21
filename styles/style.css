@@ -160,6 +160,16 @@
   font-weight: 400;
 }
 
+.section.section_type_gallery {
+  gap: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 /* #endregion */
 
 /* #region Карточка */
