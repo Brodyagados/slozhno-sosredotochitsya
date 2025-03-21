@@ -10,6 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-image: url(../images/cover-image-dark.png);
+  --logo-color: #ff0070;
   --title-color: #db00ff;
   --button-text-color: #ff0070;
   --button-opacity-border-color: rgb(255 0 112 / 0.4);
