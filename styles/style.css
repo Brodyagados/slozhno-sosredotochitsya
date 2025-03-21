@@ -23,6 +23,42 @@
   color: var(--accent-color);
 }
 
+.header__theme-menu {
+  display: flex;
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  block-size: 26px;
+  padding: 0 13px 2px;
+  border: none;
+  line-height: 1;
+  text-transform: lowercase;
+  color: var(--button-text-color);
+  background: none;
+}
+
+.header__theme-menu-button:hover {
+  outline: thin solid var(--button-opacity-border-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-block-end: thin solid currentColor;
+}
+
+.header__theme-menu-button_active {
+  border: thin solid currentColor;
+  pointer-events: none;
+}
+
 .header__logo::after {
   --size: 9px;
 
