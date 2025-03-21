@@ -346,3 +346,41 @@
 
   /* #endregion */
 }
+
+@media (min-width: 1024px) {
+  /* #region Шапка */
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+    justify-self: center;
+  }
+
+  /* #endregion */
+
+  /* #region Основной контент */
+
+  /* #region Секция */
+
+  .section.section_type_what .section__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(315px, 100%));
+  }
+
+  /* #endregion */
+
+  /* #endregion */
+
+  /* #region Шапка и Подвал */
+
+  .header,
+  .footer {
+    min-block-size: 768px;
+  }
+
+  /* #endregion */
+}
